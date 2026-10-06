@@ -176,6 +176,14 @@ const ESPN_TEAMS = [
   "was"
 ];
 
+const IMAGE_OVERRIDES = {
+  "Nia Coffey":
+    "https://cdn.wnba.com/headshots/wnba/latest/1040x760/1628269.png",
+
+  "María Conde":
+    "https://cdn.wnba.com/headshots/wnba/latest/1040x760/1629576.png"
+};
+
 
 async function loadTeamRoster(
   team
@@ -349,6 +357,20 @@ async function resolveImages() {
 
       }
     );
+
+
+    Object.entries(
+    IMAGE_OVERRIDES
+  ).forEach(
+    ([name, url]) => {
+
+      imageMap.set(
+        norm(name),
+        url
+      );
+
+    }
+  );
 
 
   return imageMap;
