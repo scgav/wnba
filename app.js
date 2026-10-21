@@ -1,3 +1,5 @@
+
+
 const TOTAL = PLAYERS.length;
 
 const grid =
@@ -1331,7 +1333,7 @@ async function init() {
         "imageNotice"
       )
       .textContent =
-        "2026 WNBA Face Match • Top 75 by regular-season minutes played.";
+        "2026 WNBA Face Match • Top 100 by regular-season minutes played.";
 
   }
 
